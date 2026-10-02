@@ -174,13 +174,23 @@ p { margin: 0; }
   padding: 10px 0 6px;
 }
 .booking__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   font-family: var(--display);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin: 0 0 8px;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--navy);
+  margin: 0 0 10px;
+}
+.booking__label svg {
+  width: 16px;
+  height: 16px;
+  color: var(--gold);
+  flex: 0 0 auto;
 }
 .booking__frame {
   width: 100%;
@@ -291,7 +301,7 @@ p { margin: 0; }
 
 <section class="booking" id="book">
   <div class="wrap booking__frame">
-    <p class="booking__label">Pick a time</p>
+    <p class="booking__label">Schedule Here <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></p>
     <iframe src="https://api.mindhyvmarketing.com/widget/booking/jLtme0CyA8XqcGDSIac6?backgroundColor=%23f4f1eaFF&primaryColor=%23000000FF&buttonText=Book+Appointment&showCalendarTitle=false&showCalendarDescription=false&showCalendarDetails=false&default=false" allow="payment" style="width:100%;border:none;overflow:hidden;" scrolling="no" id="jLtme0CyA8XqcGDSIac6_1790950004347" title="Book Golf Body Blueprint Eval"></iframe>
     <script src="https://api.mindhyvmarketing.com/js/form_embed.js" type="text/javascript"></script>
   </div>

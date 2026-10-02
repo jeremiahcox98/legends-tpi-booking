@@ -119,65 +119,10 @@ p { margin: 0; }
   max-width: var(--maxw);
   margin: 0 auto;
   padding: 12px var(--pad);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
 }
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  min-width: 0;
-}
-.brand img {
-  height: 40px;
+.site-header img {
+  height: 36px;
   width: auto;
-  flex: 0 0 auto;
-}
-.brand__text {
-  min-width: 0;
-  line-height: 1.25;
-}
-.brand__name {
-  font-family: var(--display);
-  font-weight: 700;
-  font-size: 14px;
-  color: var(--navy);
-}
-.brand__sub {
-  font-size: 12px;
-  color: var(--muted);
-  margin-top: 1px;
-}
-.header-phone {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-family: var(--display);
-  font-weight: 700;
-  font-size: 13.5px;
-  color: var(--navy);
-  padding: 10px 14px;
-  border: 1.5px solid var(--line);
-  border-radius: 999px;
-  background: var(--cream-2);
-  flex: 0 0 auto;
-  transition: border-color .15s ease, background .15s ease;
-}
-.header-phone:hover {
-  border-color: rgba(177, 137, 76, 0.55);
-  background: #fff;
-}
-.header-phone svg {
-  width: 15px;
-  height: 15px;
-  color: var(--gold);
-}
-.header-phone__label { display: none; }
-@media (min-width: 420px) {
-  .header-phone__label { display: inline; }
-  .brand img { height: 44px; }
 }
 
 /* Hero */
@@ -377,17 +322,7 @@ p { margin: 0; }
 
 <header class="site-header">
   <div class="site-header__in">
-    <div class="brand">
-      <img src="/assets/logo.png" alt="Dr. Jeremiah Cox, Mason Chiropractic">
-      <div class="brand__text">
-        <div class="brand__name">Mason Chiropractic</div>
-        <div class="brand__sub">Franklin, Tennessee</div>
-      </div>
-    </div>
-    <a class="header-phone" href="tel:16157949155">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-      <span class="header-phone__label">Call</span>
-    </a>
+    <img src="/assets/logo.png" alt="Dr. Jeremiah Cox, Mason Chiropractic">
   </div>
 </header>
 

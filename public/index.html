@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Golf Body Blueprint Eval | Vanderbilt Legends Club</title>
+<meta name="description" content="Book a 30 minute Golf Body Blueprint Eval with TPI-certified Dr. Jeremiah Cox for Vanderbilt Legends Club members during 21 Days of Chaos.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<style>
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/archivo-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/archivo-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Hanken Grotesk';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/assets/hanken-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Hanken Grotesk';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/assets/hanken-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  --navy: #13283a;
+  --navy-deep: #0c1b28;
+  --cream: #f4f1ea;
+  --cream-2: #faf8f2;
+  --paper: #ffffff;
+  --gold: #b1894c;
+  --gold-bright: #c8a05a;
+  --text: #283139;
+  --muted: #5d6873;
+  --line: rgba(19, 40, 58, 0.12);
+  --display: "Archivo", system-ui, sans-serif;
+  --body: "Hanken Grotesk", system-ui, sans-serif;
+  --maxw: 720px;
+  --pad: clamp(16px, 4vw, 28px);
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--body);
+  color: var(--text);
+  background: var(--cream);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+h1, h2 { font-family: var(--display); margin: 0; line-height: 1.08; letter-spacing: -0.02em; color: var(--navy); }
+p { margin: 0; }
+
+.wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 var(--pad);
+}
+
+/* Header */
+.topbar {
+  background: var(--navy-deep);
+  color: #aebac4;
+  font-size: 12.5px;
+  letter-spacing: 0.02em;
+}
+.topbar__in {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 8px var(--pad);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.topbar__event {
+  color: #dbe3ea;
+  font-weight: 500;
+}
+
+/* Hero */
+.hero {
+  padding: 24px 0 20px;
+  background: radial-gradient(120% 90% at 50% -20%, var(--cream-2) 0%, var(--cream) 70%);
+}
+.hero__ey {
+  display: inline-block;
+  font-family: var(--display);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+.hero h1 {
+  font-size: clamp(26px, 6.8vw, 36px);
+  font-weight: 800;
+  margin-bottom: 12px;
+  max-width: 14em;
+}
+.hero__sub {
+  color: var(--muted);
+  font-size: 15.5px;
+  max-width: 34em;
+  text-wrap: pretty;
+}
+.hero__doc {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.hero__doc img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+  border: 2px solid var(--paper);
+  box-shadow: 0 4px 14px -6px rgba(12, 27, 40, 0.35);
+  flex: 0 0 auto;
+}
+.hero__doc-text {
+  min-width: 0;
+}
+.hero__doc-text b {
+  display: block;
+  font-family: var(--display);
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.25;
+}
+.hero__doc-text span {
+  display: block;
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+/* Booking */
+.booking {
+  background: #f4f1ea;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 10px 0 6px;
+}
+.booking__label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  font-family: var(--display);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--navy);
+  margin: 0 0 10px;
+}
+.booking__label svg {
+  width: 16px;
+  height: 16px;
+  color: var(--gold);
+  flex: 0 0 auto;
+}
+.booking__note {
+  margin: -2px 0 12px;
+  font-size: 13.5px;
+  color: var(--muted);
+  text-wrap: pretty;
+}
+.cal {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 14px 22px;
+  margin-bottom: 18px;
+  min-height: 360px;
+}
+.cal [hidden] { display: none !important; }
+.cal button { -webkit-tap-highlight-color: transparent; }
+.cal__pick {
+  display: grid;
+  gap: 22px;
+}
+.cal__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 14px;
+}
+.cal__month {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--navy-deep);
+  min-width: 9.5em;
+  text-align: center;
+}
+.cal__arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+  background: #e6e3dc;
+  color: var(--navy-deep);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.cal__arrow:disabled { opacity: 0.35; cursor: default; }
+.cal__arrow svg { width: 18px; height: 18px; }
+.cal__grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  row-gap: 6px;
+  text-align: center;
+}
+.cal__dow {
+  font-family: var(--display);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--navy-deep);
+  padding-bottom: 8px;
+}
+.cal__day {
+  justify-self: center;
+  width: min(44px, 11vw);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 0;
+  background: none;
+  font: 500 15px/1 var(--body);
+  color: #a8a8a4;
+  padding: 0;
+}
+.cal__day.is-open {
+  background: #e6e3dc;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+}
+.cal__day.is-on { background: #000; color: #fff; }
+.cal__day:focus-visible, .cal__time:focus-visible, .cal__arrow:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+.cal__times-head {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 14.5px;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+.cal__tz {
+  font-size: 12.5px;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.cal__times {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.cal__time {
+  border: 1px solid #000;
+  border-radius: 6px;
+  background: transparent;
+  color: #000;
+  font: 600 15px/1 var(--body);
+  padding: 15px 8px;
+  cursor: pointer;
+}
+.cal__msg {
+  text-align: center;
+  color: var(--muted);
+  font-size: 14.5px;
+  padding: 40px 8px;
+}
+.cal__msg a { color: var(--navy); text-decoration: underline; }
+.cal__back {
+  border: 0;
+  background: none;
+  padding: 0;
+  font: 600 14px var(--body);
+  color: var(--muted);
+  cursor: pointer;
+  margin-bottom: 14px;
+}
+.cal__when {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--navy);
+  line-height: 1.25;
+}
+.cal__where {
+  font-size: 13.5px;
+  color: var(--muted);
+  margin: 4px 0 18px;
+}
+.cal__form { display: grid; gap: 12px; }
+.cal__form label {
+  display: grid;
+  gap: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--navy);
+}
+.cal__form input {
+  font: 16px var(--body);
+  padding: 12px 12px;
+  border: 1px solid rgba(19, 40, 58, 0.25);
+  border-radius: 6px;
+  background: var(--paper);
+  color: var(--text);
+}
+.cal__form input:focus { outline: 2px solid var(--gold); outline-offset: 0; border-color: transparent; }
+.cal__hp { position: absolute; left: -9999px; }
+.cal__submit {
+  margin-top: 4px;
+  border: 0;
+  border-radius: 6px;
+  background: #000;
+  color: #fff;
+  font: 700 15.5px var(--display);
+  padding: 15px;
+  cursor: pointer;
+}
+.cal__submit:disabled { opacity: 0.6; cursor: default; }
+.cal__err {
+  color: #a3341f;
+  font-size: 14px;
+}
+.cal__done { text-align: center; padding: 28px 8px; }
+.cal__check {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
+.cal__check svg { width: 24px; height: 24px; }
+.cal__done p { color: var(--muted); font-size: 14.5px; margin-top: 8px; }
+@media (max-width: 639px) {
+  #cal-side.is-empty { display: none; }
+  #cal-side { scroll-margin-bottom: 16px; }
+}
+@media (min-width: 640px) {
+  .cal { padding: 28px 24px; }
+  .cal__pick { grid-template-columns: 1fr 190px; gap: 28px; }
+  .cal__times { grid-template-columns: 1fr; max-height: 380px; overflow-y: auto; padding-right: 4px; }
+  .cal__form { max-width: 420px; }
+}
+
+/* In the session */
+.what {
+  padding: 40px 0 40px;
+}
+.what h2 {
+  font-size: clamp(22px, 5.5vw, 28px);
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+.what ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  counter-reset: step;
+}
+.what li {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 12px;
+  align-items: start;
+  counter-increment: step;
+}
+.what li::before {
+  content: counter(step);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--gold-bright);
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 13px;
+  display: grid;
+  place-items: center;
+}
+.what li p {
+  font-size: 15px;
+  color: var(--text);
+  text-wrap: pretty;
+}
+.what li strong {
+  font-family: var(--display);
+  font-weight: 700;
+  color: var(--navy);
+  display: block;
+  margin-bottom: 3px;
+  font-size: 15.5px;
+}
+
+/* Footer */
+.foot {
+  background: var(--navy-deep);
+  color: #aebac4;
+  padding: 28px 0 32px;
+  font-size: 14px;
+  line-height: 1.55;
+}
+.foot a {
+  color: var(--gold-bright);
+}
+.foot__name {
+  color: #fff;
+  font-family: var(--display);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar__in">
+    <span class="topbar__event">Vanderbilt Legends Club · 21 Days of Chaos</span>
+  </div>
+</div>
+
+
+<section class="hero">
+  <div class="wrap">
+    <p class="hero__ey">Free golf body blueprint eval</p>
+    <h1>Find the physical limits in your swing</h1>
+    <p class="hero__sub">Free for Legends members during 21 Days of Chaos. In 30 minutes you'll get your "body handicap," a score that shows where your body is costing you strokes, plus a plan to fix it.</p>
+    <div class="hero__doc">
+      <img src="/assets/dr-cox-portrait.jpg" alt="Dr. Jeremiah Cox">
+      <div class="hero__doc-text">
+        <b>Dr. Jeremiah Cox</b>
+        <span>TPI-certified chiropractor · Former collegiate golfer</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="booking" id="book">
+  <div class="wrap">
+    <p class="booking__label">Pick a time <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></p>
+    <p class="booking__note">Thursdays only at the Club.</p>
+
+    <div class="cal" id="cal" aria-live="polite">
+      <p class="cal__msg" data-step="loading">Loading open times…</p>
+
+      <p class="cal__msg" data-step="error" hidden>Couldn't load open times. <a href="https://schedule.drjeremiahcox.com/tpi-screening">Book here instead</a> or call <a href="tel:16157949155">615-794-9155</a>.</p>
+
+      <p class="cal__msg" data-step="empty" hidden>No open times right now. Call <a href="tel:16157949155">615-794-9155</a> and we'll find one.</p>
+
+      <div class="cal__pick" data-step="pick" hidden>
+        <div>
+          <div class="cal__nav">
+            <button type="button" class="cal__arrow" data-nav="-1" aria-label="Previous month"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+            <span class="cal__month" id="cal-month"></span>
+            <button type="button" class="cal__arrow" data-nav="1" aria-label="Next month"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+          </div>
+          <div class="cal__grid" id="cal-grid"></div>
+        </div>
+        <div id="cal-side">
+          <p class="cal__times-head" id="cal-day"></p>
+          <p class="cal__tz">Central time · 30 minutes</p>
+          <div class="cal__times" id="cal-times"></div>
+        </div>
+      </div>
+
+      <div data-step="form" hidden>
+        <button type="button" class="cal__back" id="cal-back">← Change time</button>
+        <p class="cal__when" id="cal-when"></p>
+        <p class="cal__where">Vanderbilt Legends Club · with Dr. Jeremiah Cox</p>
+        <form class="cal__form" id="cal-form" novalidate>
+          <label>Full name <input name="name" autocomplete="name" required></label>
+          <label>Email <input name="email" type="email" autocomplete="email" inputmode="email" required></label>
+          <label id="cal-phone" hidden>Phone <input name="phone" type="tel" autocomplete="tel" inputmode="tel"></label>
+          <label class="cal__hp" aria-hidden="true">Company <input name="company" tabindex="-1" autocomplete="off"></label>
+          <p class="cal__err" id="cal-err" hidden></p>
+          <button class="cal__submit" type="submit">Book appointment</button>
+        </form>
+      </div>
+
+      <div class="cal__done" data-step="done" hidden>
+        <div class="cal__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+        <p class="cal__when" id="cal-done-when"></p>
+        <p>You're booked. A confirmation email is on its way.</p>
+      </div>
+    </div>
+  </div>
+<script>
+(() => {
+  const TZ = "America/Chicago";
+  const root = document.getElementById("cal");
+  const $ = (id) => document.getElementById(id);
+  const dayKey = new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit" });
+  const fmtTime = new Intl.DateTimeFormat("en-US", { timeZone: TZ, hour: "numeric", minute: "2-digit" });
+  const fmtDay = new Intl.DateTimeFormat("en-US", { timeZone: "UTC", weekday: "long", month: "long", day: "numeric" });
+  const fmtMonth = new Intl.DateTimeFormat("en-US", { timeZone: "UTC", month: "long", year: "numeric" });
+  const DOW = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  let byDay = new Map(); // "YYYY-MM-DD" -> [iso, ...]
+  let months = [];       // ["YYYY-MM", ...] that have openings
+  let view = 0;          // index into months
+  let day = null;
+  let slot = null;
+
+  const show = (step) => root.querySelectorAll("[data-step]").forEach((el) => (el.hidden = el.dataset.step !== step));
+  const keyDate = (key) => new Date(key + "T12:00:00Z"); // noon UTC keeps the calendar date stable
+  const whenText = (iso) => `${fmtDay.format(keyDate(dayKey.format(new Date(iso))))} at ${fmtTime.format(new Date(iso))}`;
+
+  let meta = {};
+
+  function load(data) {
+    meta = data;
+    byDay = new Map();
+    for (const iso of data.slots) {
+      const k = dayKey.format(new Date(iso));
+      if (!byDay.has(k)) byDay.set(k, []);
+      byDay.get(k).push(iso);
+    }
+    months = [...new Set([...byDay.keys()].map((k) => k.slice(0, 7)))];
+    $("cal-phone").hidden = !data.phoneQuestionId;
+    $("cal-phone").querySelector("input").required = !!data.phoneRequired;
+    if (!byDay.size) return show("empty");
+    if (!byDay.has(day)) day = null;
+    view = Math.max(0, months.indexOf((day || [...byDay.keys()][0]).slice(0, 7)));
+    render();
+    show("pick");
+  }
+
+  function render() {
+    const [y, m] = months[view].split("-").map(Number);
+    $("cal-month").textContent = fmtMonth.format(new Date(Date.UTC(y, m - 1, 1)));
+    root.querySelector('[data-nav="-1"]').disabled = view === 0;
+    root.querySelector('[data-nav="1"]').disabled = view === months.length - 1;
+
+    const grid = $("cal-grid");
+    grid.innerHTML = DOW.map((d) => `<span class="cal__dow">${d}</span>`).join("");
+    const lead = new Date(Date.UTC(y, m - 1, 1)).getUTCDay();
+    const len = new Date(Date.UTC(y, m, 0)).getUTCDate();
+    for (let i = 0; i < lead; i++) grid.insertAdjacentHTML("beforeend", "<span></span>");
+    for (let d = 1; d <= len; d++) {
+      const k = `${months[view]}-${String(d).padStart(2, "0")}`;
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "cal__day";
+      btn.textContent = d;
+      if (byDay.has(k)) {
+        btn.classList.add("is-open");
+        if (k === day) btn.classList.add("is-on");
+        btn.setAttribute("aria-label", fmtDay.format(keyDate(k)));
+        btn.onclick = () => {
+          day = k;
+          render();
+          if (matchMedia("(max-width: 639px)").matches) $("cal-side").scrollIntoView({ behavior: "smooth", block: "nearest" });
+        };
+      } else {
+        btn.disabled = true;
+      }
+      grid.append(btn);
+    }
+
+    const times = $("cal-times");
+    times.innerHTML = "";
+    const picked = Boolean(day && day.startsWith(months[view]));
+    $("cal-side").classList.toggle("is-empty", !picked);
+    if (picked) {
+      $("cal-day").textContent = fmtDay.format(keyDate(day));
+      for (const iso of byDay.get(day)) {
+        const b = document.createElement("button");
+        b.type = "button";
+        b.className = "cal__time";
+        b.textContent = fmtTime.format(new Date(iso));
+        b.onclick = () => pick(iso);
+        times.append(b);
+      }
+    } else {
+      $("cal-day").textContent = "Pick a highlighted day";
+    }
+  }
+
+  function pick(iso) {
+    slot = iso;
+    $("cal-when").textContent = whenText(iso);
+    $("cal-err").hidden = true;
+    show("form");
+    root.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  root.querySelectorAll("[data-nav]").forEach((b) => (b.onclick = () => {
+    view += Number(b.dataset.nav);
+    render();
+  }));
+  $("cal-back").onclick = () => { render(); show("pick"); };
+
+  $("cal-form").onsubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    if (!form.reportValidity()) return;
+    const btn = form.querySelector(".cal__submit");
+    const err = $("cal-err");
+    btn.disabled = true;
+    btn.textContent = "Booking…";
+    err.hidden = true;
+    try {
+      const res = await fetch("/api/book", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...Object.fromEntries(new FormData(form)),
+          starts_at: slot,
+          timezone: Intl.DateTimeFormat().resolvedOptions().timeZone || TZ,
+        }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        $("cal-done-when").textContent = whenText(data.starts_at || slot);
+        show("done");
+        return;
+      }
+      if (res.status === 409 && data.slots) {
+        load({ ...meta, slots: data.slots });
+        err.textContent = data.error;
+        show("pick");
+        $("cal-day").textContent = data.error;
+        return;
+      }
+      err.textContent = data.error || "Something went wrong. Please call 615-794-9155.";
+      err.hidden = false;
+    } catch {
+      err.textContent = "Couldn't reach the booking system. Please try again or call 615-794-9155.";
+      err.hidden = false;
+    } finally {
+      btn.disabled = false;
+      btn.textContent = "Book appointment";
+    }
+  };
+
+  fetch("/api/slots")
+    .then((r) => (r.ok ? r.json() : Promise.reject()))
+    .then(load)
+    .catch(() => show("error"));
+})();
+</script>
+</section>
+
+<section class="what">
+  <div class="wrap">
+    <h2>In the session</h2>
+    <ol>
+      <li>
+        <p><strong>TPI mobility screening</strong> 16 quick movement tests from the Titleist Performance Institute. Your results become your body handicap.</p>
+      </li>
+      <li>
+        <p><strong>Hands-on muscle work</strong> I'll work on your tightest areas so you can feel the difference before you leave.</p>
+      </li>
+      <li>
+        <p><strong>Your plan</strong> The 2 or 3 exercises that will help your swing most. Want to keep going? Legends members get a discount on care at the office.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="foot__name">Mason Chiropractic</p>
+    <p>Franklin, TN</p>
+    <p><a href="tel:16157949155">615-794-9155</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

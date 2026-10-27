@@ -1,0 +1,7 @@
+name = "legends-tpi-booking"
+pages_build_output_dir = "public"
+compatibility_date = "2026-10-01"
+
+[vars]
+# TidyCal "TPI Screening" booking type. TIDYCAL_TOKEN is a secret (.dev.vars locally, `wrangler pages secret put` in production).
+BOOKING_TYPE_ID = "2139818"
